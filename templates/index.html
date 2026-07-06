@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flood Prediction</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+</head>
+
+<body>
+
+<nav class="navbar">
+    <div class="logo">🌊 Flood Prediction System</div>
+</nav>
+
+<section class="prediction-section">
+
+    <div class="prediction-card">
+
+        <h1>Flood Prediction</h1>
+
+        <form action="/predict" method="POST">
+
+            <div class="row">
+                <div class="input-box">
+                    <label>Temperature</label>
+                    <input type="number" step="any" name="Temp" required>
+                </div>
+
+                <div class="input-box">
+                    <label>Humidity</label>
+                    <input type="number" step="any" name="Humidity" required>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="input-box">
+                    <label>Cloud Cover</label>
+                    <input type="number" step="any" name="Cloud_Cover" required>
+                </div>
+
+                <div class="input-box">
+                    <label>Annual Rainfall</label>
+                    <input type="number" step="any" name="ANNUAL" required>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="input-box">
+                    <label>Jan-Feb</label>
+                    <input type="number" step="any" name="Jan_Feb" required>
+                </div>
+
+                <div class="input-box">
+                    <label>Mar-May</label>
+                    <input type="number" step="any" name="Mar_May" required>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="input-box">
+                    <label>Jun-Sep</label>
+                    <input type="number" step="any" name="Jun_Sep" required>
+                </div>
+
+                <div class="input-box">
+                    <label>Oct-Dec</label>
+                    <input type="number" step="any" name="Oct_Dec" required>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="input-box">
+                    <label>Average June</label>
+                    <input type="number" step="any" name="avgjune" required>
+                </div>
+
+                <div class="input-box">
+                    <label>Sub</label>
+                    <input type="number" step="any" name="sub" required>
+                </div>
+            </div>
+
+            <button type="submit" class="predict-btn">
+                Predict Flood
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+
+</body>
+</html>

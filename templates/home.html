@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Flood Prediction System</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+            <i class="fa-solid fa-cloud-showers-heavy"></i>
+            Flood Prediction System
+        </div>
+
+        <ul>
+
+            <li><a href="/">Home</a></li>
+
+            <li><a href="/Predict">Predict</a></li>
+
+            <li><a href="#about">About</a></li>
+
+        </ul>
+
+    </nav>
+
+    <!-- Hero Section -->
+
+    <section class="hero">
+
+        <div class="hero-left">
+
+            <h1>
+                FLOOD
+                <span>PREDICTION</span>
+                SYSTEM
+            </h1>
+
+            <p>
+
+                Predict flood possibilities using Machine Learning.
+
+                Enter weather and rainfall parameters to receive an
+                instant flood prediction with high accuracy.
+
+            </p>
+
+            <a href="/Predict">
+
+                <button class="btn">
+
+                    <i class="fa-solid fa-water"></i>
+
+                    Predict Flood
+
+                </button>
+
+            </a>
+
+        </div>
+
+        <div class="hero-right">
+
+            <img src="{{ url_for('static', filename='images/flood.png') }}"
+                alt="Flood">
+
+        </div>
+
+    </section>
+
+    <!-- Features -->
+
+    <section class="cards">
+
+        <div class="card">
+
+            <i class="fa-solid fa-chart-line"></i>
+
+            <h2>Accurate</h2>
+
+            <p>
+
+                Machine Learning model trained using historical rainfall
+                and weather datasets.
+
+            </p>
+
+        </div>
+
+        <div class="card">
+
+            <i class="fa-solid fa-cloud-rain"></i>
+
+            <h2>Real-Time</h2>
+
+            <p>
+
+                Predict flood possibilities instantly using
+                user-provided weather parameters.
+
+            </p>
+
+        </div>
+
+        <div class="card">
+
+            <i class="fa-solid fa-shield-halved"></i>
+
+            <h2>Reliable</h2>
+
+            <p>
+
+                Fast and reliable flood prediction for
+                disaster awareness and planning.
+
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- About -->
+
+    <section class="about" id="about">
+
+        <h2>About This Project</h2>
+
+        <p>
+
+            This Flood Prediction System is developed using Machine
+            Learning and Flask.
+
+            The system analyzes rainfall and weather conditions and
+            predicts whether there is a possibility of flooding.
+
+            The project uses XGBoost as the final prediction model,
+            providing high accuracy and fast prediction.
+
+        </p>
+
+    </section>
+
+    <!-- Footer -->
+
+    <footer>
+
+        © 2026 Flood Prediction System | Developed using Flask & Machine Learning
+
+    </footer>
+
+</body>
+
+</html>

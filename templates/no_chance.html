@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Prediction Result</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<section class="result-section">
+
+    <div class="result-card safe-card">
+
+        <div class="result-icon">
+            <i class="fa-solid fa-circle-check"></i>
+        </div>
+
+        <h1 class="safe-title">
+            No Flood Risk
+        </h1>
+
+        <p>
+
+            Based on the weather and rainfall parameters you entered,
+            the Machine Learning model predicts that there is
+            <strong>no significant risk of flooding.</strong>
+
+        </p>
+
+        <div class="tips">
+
+            <h2>Safety Tips</h2>
+
+            <ul>
+
+                <li>✔ Continue monitoring weather updates.</li>
+
+                <li>✔ Follow local weather advisories.</li>
+
+                <li>✔ Keep emergency contacts available.</li>
+
+                <li>✔ Stay prepared during heavy rainfall.</li>
+
+            </ul>
+
+        </div>
+
+        <div class="buttons">
+
+            <a href="/">
+                <button class="home-btn">
+                    Home
+                </button>
+            </a>
+
+            <a href="/Predict">
+                <button class="predict-btn">
+                    Predict Again
+                </button>
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+</body>
+</html>
